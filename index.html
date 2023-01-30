@@ -9,18 +9,21 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/dd1e4573ce.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div class="header">
+    <div id="header">
         <div class="container">
             <nav>
-                <a href="index.html"><img src="img/logo1.png" alt="logo"></a>
-                <ul>
-                    <li><a href="/index.html">Home</a></li> 
-                    <li><a href="/about.html">About</a></li>
-                    <li><a href="/blog.html">Services</a></li>
-                    <li><a href="/contact.html">Portfolio</a></li>
-                    <li><a href="/contact.html">Contact</a></li>
+                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="#my-about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
             </nav>
         </div>
         <div class="main">
@@ -30,10 +33,12 @@
                     <div class="name">Abdul <span>Aziz</span></div>
                     <div class="about">Developer</div>
                     <div class="more-about">
-                        I am proficient in Java, HTML, CSS, JavaScript, and React. I'm eager to start my career as a developer and am particularly interested in working on projects.
+                        I am proficient in Java, HTML, CSS, JavaScript, and React. I'm eager to start my career as a
+                        developer and am particularly interested in working on projects.
                     </div>
                     <div class="buttons">
-                        <a href="/cv.pdf" target="_blank"> <button style="text-decoration: none">Download CV</button></a>
+                        <a href="/cv.pdf" target="_blank"> <button style="text-decoration: none">Download
+                                CV</button></a>
                     </div>
                 </div>
             </div>
@@ -41,7 +46,7 @@
     </div>
 
     <!-------------About------------->
-    <div class="my-about">
+    <div id="my-about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
@@ -49,9 +54,9 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="title">About Me</h1>
-                    <p>I am a front-end developer with expertise in HTML, CSS, 
-                        JavaScript, React, and Node.js. I specialize in creating 
-                        visually stunning websites that are both responsive and 
+                    <p class="self-about">I am a front-end developer with expertise in HTML, CSS,
+                        JavaScript, React, and Node.js. I specialize in creating
+                        visually stunning websites that are both responsive and
                         user-friendly. My skills in Node.js allow me to seamlessly
                         integrate back-end services and deliver high-quality web experiences.
                     </p>
@@ -62,10 +67,18 @@
                     </div>
                     <div class="tab-contents">
                         <ul>
-                            <li><div>Languages</div><br>Java, Python, JavaScript</li>
-                            <li><div>Web Technologies</div><br>HTML, CSS, NodeJS, ReactJS</li>
-                            <li><div>DataBase</div><br>MySQL</li>
-                            <li><div>Other Skills</div><br>GIT, GitHub</li>
+                            <li>
+                                <div>Languages</div><br>Java, Python, JavaScript
+                            </li>
+                            <li>
+                                <div>Web Technologies</div><br>HTML, CSS, NodeJS, ReactJS
+                            </li>
+                            <li>
+                                <div>DataBase</div><br>MySQL
+                            </li>
+                            <li>
+                                <div>Other Skills</div><br>GIT, GitHub
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -75,7 +88,7 @@
 
     <!-- -------------services--------------- -->
 
-    <div class="services">
+    <div id="services">
         <div class="container">
             <h1 class="title">My Services</h1>
             <div class="services-list">
@@ -101,7 +114,7 @@
         </div>
     </div>
     <!----------------------portfolio--------------------->
-    <div class="portfolio">
+    <div id="portfolio">
         <div class="container">
             <h1 class="title">My Work</h1>
             <div class="work-list">
@@ -125,5 +138,42 @@
             <a href="#" class="btn">See More</a>
         </div>
     </div>
+
+    <!------------------------------contact----------------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="title">Contact me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>abdulaziz742141@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+916296055723</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/aziz7477/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Aziz7477" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com/im_aziz_7477" target="_blank"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/im_aziz_7477/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a class="btn btn2" href="/cv.pdf" target="_blank">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Massage" required></textarea>
+                        <button type="submit" class="btn btn2">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> 2023 Abdul Aziz. All rights reserved.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
