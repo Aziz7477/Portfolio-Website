@@ -19,6 +19,7 @@ body{
     background-image: url(img/wallpaperflare.com_wallpaper\ \(6\).jpg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 nav img{
     width: 200px;
@@ -61,8 +62,6 @@ nav ul li a:hover:after{
 .container{
     background-color: black;
     padding: 10px 10%;
-   
-
 }
 .infoContainer{
     

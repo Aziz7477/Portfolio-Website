@@ -24,3 +24,4 @@ function closeMenu(){
       })
       .catch(error => console.error('Error!', error.message))
   })
+
