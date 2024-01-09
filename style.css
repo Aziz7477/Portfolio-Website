@@ -13,6 +13,7 @@ body{
     background-color: #080808;
     color: #fff;
 }
+
 #header{
     width: 100%;
     height: 100vh;
@@ -23,11 +24,13 @@ body{
 }
 nav img{
     width: 200px;
+    margin-right: 250px;
 }
 nav{
+    margin-top: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 nav ul li {
@@ -59,19 +62,29 @@ nav ul li a:hover{
 nav ul li a:hover:after{
     width: 100%;
 }*/
+.container1{
+    background-color: rgb(19, 19, 19);
+    width: 100%;
+    height: 10%;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+   
+}
 .container{
     background-color: black;
     padding: 10px 10%;
 }
 .infoContainer{
-    
     height: 60vh;
     width: 80vw;
     margin: 144px auto;
+    margin-top:4%;
     display: flex;
     justify-content: space-around;
 }
 .devInfo{
+    margin-top: 350px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -390,6 +403,9 @@ nav .fa-solid{
 
 
 @media only screen and (max-width:600px) {
+    .container1{
+        height: 7%;
+    }
     nav .fa-solid{
         display: block;
         font-size: 25px;
